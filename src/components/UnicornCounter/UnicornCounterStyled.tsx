@@ -5,8 +5,10 @@ export const UnicornCounterStyled = styled.div`
   padding: 1em;
   text-align: center;
   display: flex;
-  margin: 5rem;
-  border-radius: 5%;
+  justify-content: center;
+  margin: 10rem;
+  border-radius: 15px;
+  width: 50rem;
 
   .counter {
     &__title {
@@ -17,8 +19,10 @@ export const UnicornCounterStyled = styled.div`
     &__button {
       border: red;
       background-color: white;
+      font-size: 50px;
+      text-align: center;
       width: 100px;
-      border-radius: 5%;
+      border-radius: 30%;
     }
   }
 `;

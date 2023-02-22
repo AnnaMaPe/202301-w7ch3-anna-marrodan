@@ -6,11 +6,11 @@ export const UnicornCounter = (): JSX.Element => {
 
   return (
     <UnicornCounterStyled className="counter">
-      <button className="counter__button" />
+      <button className="counter__button">+</button>
       <h2 className="counter__title">
         You have a total of {totalUnicors.count} unicorns!
       </h2>
-      <button className="counter__button" />
+      <button className="counter__button">-</button>
     </UnicornCounterStyled>
   );
 };
