@@ -14,8 +14,11 @@ export const UnicornFarm = (): JSX.Element => {
     <>
       <UnicornFarmStyled className="gallery">
         <h2 className="gallery__title">Unicorn farm</h2>
-        {showImage && <img src="leben.jpeg" alt="Unicorn" />}
-        <div className="gallery__emojis">{unicornEmojis}</div>
+        {showImage ? (
+          <img src="leben.jpeg" alt="Unicorn" />
+        ) : (
+          <div className="gallery__emojis">{unicornEmojis}</div>
+        )}
       </UnicornFarmStyled>
     </>
   );

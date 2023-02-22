@@ -15,7 +15,7 @@ export const UnicornCounterStyled = styled.div`
 
   .counter {
     &__title {
-      color: white;
+      color: black;
       font-size: 2.5em;
       font-weight: bold;
       padding: 1rem 2rem 1rem 2rem;
