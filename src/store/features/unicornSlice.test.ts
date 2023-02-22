@@ -1,4 +1,4 @@
-import { UnicornCountState } from "../../types";
+import { UnicornState } from "../../types";
 import {
   addUnicornActionCreator,
   removeUnicornActionCreator,
@@ -8,7 +8,7 @@ import {
 describe("Given a unicornReducer function", () => {
   describe("When it receives an intial state of 3 unicorns and add one unicorn function", () => {
     test("Then it should return a current state of 4 unicorns", () => {
-      const initialStateCount: UnicornCountState = { count: 3 };
+      const initialStateCount: UnicornState = { count: 3, showImage: false };
 
       const finalStateCount = unicornReducer(
         initialStateCount,
@@ -20,7 +20,7 @@ describe("Given a unicornReducer function", () => {
   });
   describe("When it receives an intial state of 3 unicorns and remove one unicorn function", () => {
     test("Then it should return a current state of 2 unicorns", () => {
-      const initialStateCount: UnicornCountState = { count: 3 };
+      const initialStateCount: UnicornState = { count: 3, showImage: false };
 
       const finalStateCount = unicornReducer(
         initialStateCount,

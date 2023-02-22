@@ -1,8 +1,9 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { UnicornCountState } from "../../types";
+import { UnicornState } from "../../types";
 
-const initialState: UnicornCountState = {
+const initialState: UnicornState = {
   count: 0,
+  showImage: false,
 };
 
 const unicornSlice = createSlice({
@@ -11,6 +12,11 @@ const unicornSlice = createSlice({
   reducers: {
     addUnicorn: (state) => {
       state.count += 1;
+      if (state.count % 5 === 0) {
+        state.showImage = true;
+      } else {
+        state.showImage = false;
+      }
     },
     removeUnicorn: (state) => {
       state.count -= 1;
