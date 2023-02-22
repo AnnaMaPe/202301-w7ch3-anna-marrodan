@@ -1,5 +1,5 @@
-import { useEffect } from "react";
 import { useAppSelector } from "../../store/hooks";
+import { UnicornFarmStyled } from "./UnicornFarmStyled";
 
 export const UnicornGallery = (): JSX.Element => {
   const unicornCount = useAppSelector((state) => state.unicorn.count);
@@ -9,11 +9,12 @@ export const UnicornGallery = (): JSX.Element => {
     </span>
   ));
 
-  useEffect(() => {}, [unicornCount]);
   return (
     <>
-      <h2>Unicorn farm</h2>
-      <div className="gallery_emojis">{unicornEmojis}</div>
+      <UnicornFarmStyled className="gallery">
+        <h2 className="gallery__title">Unicorn farm</h2>
+        <div className="gallery__emojis">{unicornEmojis}</div>
+      </UnicornFarmStyled>
     </>
   );
 };
