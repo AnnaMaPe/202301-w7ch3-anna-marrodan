@@ -1,3 +1,3 @@
-export interface CatStructure {
+export interface UnicornCountState {
   count: number;
 }

@@ -1,5 +1,5 @@
 import { configureStore, ThunkAction, Action } from "@reduxjs/toolkit";
-import { unicornReducer } from "./features/unicornsSlice";
+import { unicornReducer } from "./features/unicornSlice";
 
 export const store = configureStore({
   reducer: { unicorn: unicornReducer },

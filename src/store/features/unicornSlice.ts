@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { CatStructure } from "../../types";
+import { UnicornCountState } from "../../types";
 
-const initialState: CatStructure = {
+const initialState: UnicornCountState = {
   count: 0,
 };
 
