@@ -1,7 +1,7 @@
 import { useAppSelector } from "../../store/hooks";
 import { UnicornFarmStyled } from "./UnicornFarmStyled";
 
-export const UnicornGallery = (): JSX.Element => {
+export const UnicornFarm = (): JSX.Element => {
   const unicornCount = useAppSelector((state) => state.unicorn.count);
   const unicornEmojis = Array.from({ length: unicornCount }, (_, i) => (
     <span key={i} role="img" aria-label="unicorn">

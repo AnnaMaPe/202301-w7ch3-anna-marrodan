@@ -1,11 +1,11 @@
 import { UnicornCounter } from "./components/UnicornCounter/UnicornCounter";
-import { UnicornGallery } from "./components/UnicornFarm/UnicornFarm";
+import { UnicornFarm } from "./components/UnicornFarm/UnicornFarm";
 
 const App = () => {
   return (
     <>
       <UnicornCounter />
-      <UnicornGallery />
+      <UnicornFarm />
     </>
   );
 };
