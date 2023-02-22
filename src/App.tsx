@@ -1,5 +1,7 @@
+import { UnicornCounter } from "./components/UnicornCounter/UnicornCounter";
+
 const App = () => {
-  return <></>;
+  return <UnicornCounter />;
 };
 
 export default App;
