@@ -7,5 +7,9 @@ export const Button = ({
   label,
   onClick: actionOnClick,
 }: ButtonProps): JSX.Element => {
-  return <button onClick={actionOnClick}>{label}</button>;
+  return (
+    <button className="button" onClick={actionOnClick}>
+      {label}
+    </button>
+  );
 };
