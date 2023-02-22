@@ -1,7 +1,8 @@
 import { configureStore, ThunkAction, Action } from "@reduxjs/toolkit";
+import { unicornReducer } from "./features/unicornsSlice";
 
 export const store = configureStore({
-  reducer: {},
+  reducer: { unicorn: unicornReducer },
 });
 
 export type AppDispatch = typeof store.dispatch;
