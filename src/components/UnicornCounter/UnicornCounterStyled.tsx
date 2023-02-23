@@ -29,5 +29,6 @@ export const UnicornCounterStyled = styled.div`
     width: 10rem;
     height: 10rem;
     border-radius: 15px;
+    cursor: pointer;
   }
 `;
